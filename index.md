@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+title-heading: false
 ---
 
 # 20 Najpopularniejszych Języków Programowania Zgodnie z Indeksem TIOBE. 

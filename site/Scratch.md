@@ -11,7 +11,7 @@ title: Scratch
 
 **Change:** +0.36%
 
-**Overview:** What is Scratch coding used for? Scratch programming is used to: Build games, animations, and stories. Learn the basics of computer programming. Build a solid foundation for children to later learn text-based programming languages. Understand how important coding concepts such as functions and loops work. Teach children how to think like a ...
+**Overview:** Learn what Scratch programming is! Scratch programming language features and examples. Learn Scratch - free tutorials & classes by MIT experts.
 
 [Additional information](https://www.create-learn.us/blog/what-is-scratch-programming/)
 

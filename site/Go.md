@@ -11,8 +11,8 @@ title: Go
 
 **Change:** +0.53%
 
-**Overview:** Go is a procedural programming language. It was developed in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson at Google but launched in 2009 as an open-source programming language. Programs are assembled by using packages, for efficient management of dependencies. This language also supports environment adopting patterns alike to dynamic languages.
+**Overview:** The Go programming language is an open source project to make programmers more productive. Go is expressive, concise, clean, and efficient. ... This topic gives an overview of developing and publishing modules. Module release and versioning workflow. When you develop modules for use by other developers, you can follow a workflow that helps ...
 
-[Additional information](https://www.geeksforgeeks.org/go-programming-language-introduction/)
+[Additional information](https://go.dev/doc/)
 
 ![Logo](https://www.alamy.com/aggregator-api/download?url=https://c8.alamy.com/comp/2M8NA85/go-programming-language-logo-white-background-2M8NA85.jpg)

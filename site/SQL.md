@@ -11,8 +11,8 @@ title: SQL
 
 **Change:** +1.04%
 
-**Overview:** Whether you're a software developer, database administrator, data analyst, or data scientist, this SQL tutorial will help you unlock the power of SQL for managing and analyzing data. SQL (Structured Query Language) is the standard language for data interaction in Relational Database Management Systems (RDBMS).
+**Overview:** SQL is a set -based, declarative programming language, not an imperative programming language like C or BASIC. However, extensions to Standard SQL add procedural programming language functionality, such as control-of-flow constructs.
 
-[Additional information](https://www.sqltutorial.org/)
+[Additional information](https://en.wikipedia.org/wiki/SQL)
 
 ![Logo](https://logodix.com/logo/542135.jpg)

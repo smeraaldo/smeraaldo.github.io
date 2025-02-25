@@ -15,4 +15,4 @@ title: MATLAB
 
 [Additional information](https://www.geeksforgeeks.org/introduction-to-matlab/)
 
-![Logo](https://logos-world.net/wp-content/uploads/2020/12/MATLAB-Emblem.png)
+![Logo](https://logos-world.net/wp-content/uploads/2020/12/MATLAB-Symbol-700x394.jpg)

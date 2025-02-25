@@ -54,29 +54,40 @@ with DDGS() as ddgs:
         else:
             lang['Image'] = ""
 
-# Generujemy plik Markdown z tabelą używając pandas (punkt 2).
-df = pd.DataFrame(languages)
-with open('table.md', 'w', encoding='utf-8') as file:
-    file.write('### Popularity of Programming Languages\n\n')
-    file.write(df[['Position', 'Name', 'Ratings', 'Change']].to_markdown(index=False))
+# # Generujemy plik Markdown z tabelą używając pandas (punkt 2).
+# df = pd.DataFrame(languages)
+# with open('table.md', 'w', encoding='utf-8') as file:
+#     file.write('### Popularity of Programming Languages\n\n')
+#     file.write(df[['Position', 'Name', 'Ratings', 'Change']].to_markdown(index=False))
 
-# Generujemy stronę główną witryny (index.md) w katalogu głównym (punkt 4).
+# Generujemy witrynę (index.md).
 with open("index.md", "w", encoding="utf-8") as f:
     f.write("---\n")
     f.write("layout: default\n")
     f.write("title: Home\n")
     f.write("---\n\n")
 
+    f.write("# 20 Najpopularniejszych Języków Programowania Zgodnie z Indeksem TIOBE. \n\n")
+    f.write("Indeks społeczności programistycznej TIOBE jest wskaźnikiem popularności języków programowania. Indeks jest aktualizowany raz w miesiącu. Oceny opierają się na liczbie wykwalifikowanych inżynierów na całym świecie, kursów i dostawców zewnętrznych. Popularne witryny internetowe Google, Amazon, Wikipedia, Bing i ponad 20 innych są używane do obliczania ocen. Ważne jest, aby pamiętać, że indeks TIOBE nie dotyczy najlepszego języka programowania ani języka, w którym napisano większość linii kodu. Indeks może być używany do sprawdzenia, czy Twoje umiejętności programistyczne są nadal aktualne lub do podjęcia strategicznej decyzji o tym, jaki język programowania należy przyjąć, rozpoczynając budowę nowego systemu oprogramowania. \n")
+    f.write("Są też obrazki, krótkie opisy oraz linki do dokumentacji poszczególnych języków: \n")
+    f.write("[Lista języków](table.md)")
+
+# Generujemy listę (table.md) w katalogu głównym (punkt 4).
+with open("table.md", "w", encoding="utf-8") as f:
+    f.write("---\n")
+    f.write("layout: default\n")
+    f.write("title: Table\n")
+    f.write("---\n\n")
+
     f.write("# Popularity of Programming Languages\n\n")
-    f.write("Below is a list of programming languages according to the TIOBE index, along with additional information found on the web.\n\n")
-    f.write("| Position | Name | Ratings | Change | Info |\n")
-    f.write("| --- | --- | --- | --- | --- |\n")
+    f.write("Below is a list of programming languages according to the TIOBE index, click on the name to find more information.\n\n")
+    f.write("| Position | Name | Ratings | Change | \n")
+    f.write("| --- | --- | --- | --- |\n")
     for lang in languages:
         # Przygotowanie bezpiecznej nazwy pliku (zamiana spacji i niepożądanych znaków)
         safe_name = lang['Name'].replace(' ', '_').replace('/', '_')
         name_link = f"[{lang['Name']}](./site/{safe_name}.md)"
-        info_link = f"[Details]({lang['Info_URL']})" if lang['Info_URL'] else "N/A"
-        f.write(f"| {lang['Position']} | {name_link} | {lang['Ratings']} | {lang['Change']} | {info_link} |\n")
+        f.write(f"| {lang['Position']} | {name_link} | {lang['Ratings']} | {lang['Change']} |\n")
 
 # Generujemy podstrony dla każdego języka w katalogu 'site'.
 for lang in languages:

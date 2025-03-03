@@ -12,6 +12,8 @@ A successor to the programming language B, C was originally developed at Bell La
 C is an imperative procedural language, supporting structured programming, lexical variable scope, and recursion, with a static type system. It was designed to be compiled to provide low-level access to memory and language constructs that map efficiently to machine instructions, all with minimal runtime support. Despite its low-level capabilities, the language was designed to encourage cross-platform programming. A standards-compliant C program written with portability in mind can be compiled for a wide variety of computer platforms and operating systems with few changes to its source code.
 Since 2000, C has consistently ranked among the top four languages in the TIOBE index, a measure of the popularity of programming languages.
 
+
+
 Below you can find example of writing 'Hello World' in C and here some [additional information](https://en.wikipedia.org/wiki/C_(programming_language))
 
 ![Hello_World](https://cdn.mycplus.com/mycplus/wp-content/uploads/2018/01/hello_world_c.png)

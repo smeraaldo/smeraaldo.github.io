@@ -3,7 +3,7 @@ layout: default
 title: R
 ---
 
-# <img src="https://workingnation.com/wp-content/uploads/2018/05/R_logo.svg_.png" alt="logo" width="30"/>**R** (_№15_) 
+# <img src="https://download.logo.wine/logo/R_(programming_language)/R_(programming_language)-Logo.wine.png" alt="logo" width="30"/>**R** (_№15_) 
 
 **Ratings:** 1.06% | **Change:** +0.07% 
 
@@ -11,6 +11,8 @@ title: R
 The core R language is augmented by a large number of extension packages, containing reusable code, documentation, and sample data.
 R software is open-source and free software. It is licensed by the GNU Project and available under the GNU General Public License. It is written primarily in C, Fortran, and R itself. Precompiled executables are provided for various operating systems.
 As an interpreted language, R has a native command line interface. Moreover, multiple third-party graphical user interfaces are available, such as RStudio—an integrated development environment—and Jupyter—a notebook interface.
+
+
 
 Below you can find example of writing 'Hello World' in R and here some [additional information](https://en.wikipedia.org/wiki/R_(programming_language))
 

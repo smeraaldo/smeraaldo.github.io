@@ -1,8 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
 from duckduckgo_search import DDGS
-import wikipediaapi as wiki
+import wikipedia
+from wikipedia.exceptions import DisambiguationError
 
+wikipedia.set_lang("en")
 url = "https://www.tiobe.com/tiobe-index/"
 
 # Wyslanie żądania do strony (punkt 1).
@@ -31,13 +33,14 @@ for tr in table.find_all('tr'):
     languages.append(language)
 
 # Wyszukujemy dodatkowe informacje za pomocą DuckDuckGo i wikipedia api (punkt 3).
-def get_wikipedia_summary(lang_name, lang_code="en"):
-    user_agent = "BotForProject/1.0 (https://github.com/smeraaldo/smeraaldo.github.io)"
-    wiki_wiki = wiki.Wikipedia(language=lang_code, user_agent=user_agent)
-    page = wiki_wiki.page(lang_name + " (programming language)")
-    
-    if page.exists():
-        return page.summary, page.fullurl
+def get_wikipedia_summary(lang_name):
+    search_results = wikipedia.search(lang_name.replace('#', ' Sharp') + "(programming language)")
+    if search_results:
+        try:
+            page = wikipedia.page(search_results[0], auto_suggest=False)
+        except DisambiguationError as e:
+            page = wikipedia.page(e.options[0], auto_suggest=False)
+        return page.summary, page.url
     else:
         return "No summary found.", ""
 

@@ -3,7 +3,7 @@ layout: default
 title: COBOL
 ---
 
-# <img src="https://logodix.com/logo/2100260.png" alt="logo" width="30"/>**COBOL** (_№18_) 
+# <img src="https://logodix.com/logo/2100309.png" alt="logo" width="30"/>**COBOL** (_№18_) 
 
 **Ratings:** 0.82% | **Change:** -0.18% 
 

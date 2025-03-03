@@ -14,6 +14,6 @@ As an interpreted language, R has a native command line interface. Moreover, mul
 
 
 
-Below you can find example of writing 'Hello World' in R and here some [additional information](https://en.wikipedia.org/wiki/R_(programming_language))
+Here you can find some [additional information](https://en.wikipedia.org/wiki/R_(programming_language)) and below example of writing 'Hello World' in _R_: 
 
 ![Hello_World](https://i0.wp.com/sparkbyexamples.com/wp-content/uploads/2022/06/r-hello-world-program.png?resize=2048,1100&ssl=1)

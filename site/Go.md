@@ -16,6 +16,6 @@ A third-party source-to-source compiler, GopherJS, transpiles Go to JavaScript f
 
 
 
-Below you can find example of writing 'Hello World' in Go and here some [additional information](https://en.wikipedia.org/wiki/Go_(programming_language))
+Here you can find some [additional information](https://en.wikipedia.org/wiki/Go_(programming_language)) and below example of writing 'Hello World' in _Go_: 
 
 ![Hello_World](https://i.ytimg.com/vi/-Q7NzMYEOWs/maxresdefault.jpg)

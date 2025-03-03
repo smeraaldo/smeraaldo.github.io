@@ -15,6 +15,6 @@ Academic computer scientists were generally uninterested in business application
 COBOL has been criticized for its verbosity, design process, and poor support for structured programming. These weaknesses result in monolithic programs that are hard to comprehend as a whole, despite their local readability.
 For years, COBOL has been assumed as a programming language for business operations in mainframes, although in recent years, many COBOL operations have been moved to cloud computing.
 
-Below you can find example of writing 'Hello World' in COBOL and here some [additional information](https://en.wikipedia.org/wiki/COBOL)
+Here you can find some [additional information](https://en.wikipedia.org/wiki/COBOL) and below example of writing 'Hello World' in _COBOL_: 
 
 ![Hello_World](https://image5.slideserve.com/9621984/hello-world-example-l.jpg)

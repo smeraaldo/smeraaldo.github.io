@@ -12,6 +12,6 @@ Ruby is dynamically typed and uses garbage collection and just-in-time compilati
 
 
 
-Below you can find example of writing 'Hello World' in Ruby and here some [additional information](https://en.wikipedia.org/wiki/Ruby_(programming_language))
+Here you can find some [additional information](https://en.wikipedia.org/wiki/Ruby_(programming_language)) and below example of writing 'Hello World' in _Ruby_: 
 
-![Hello_World](https://www.wikihow.com/images/6/6b/Write-a-Hello-World-Program-in-Ruby-Step-10.jpg)
+![Hello_World](http://www.wikihow.com/images/6/6b/Write-a-Hello-World-Program-in-Ruby-Step-10.jpg)

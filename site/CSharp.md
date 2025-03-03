@@ -13,6 +13,6 @@ As of January 2025, the most recent stable version of the language is C# 13.0, w
 
 
 
-Below you can find example of writing 'Hello World' in C# and here some [additional information](https://en.wikipedia.org/wiki/C_Sharp_(programming_language))
+Here you can find some [additional information](https://en.wikipedia.org/wiki/C_Sharp_(programming_language)) and below example of writing 'Hello World' in _C#_: 
 
 ![Hello_World](https://res.cloudinary.com/dmsxwwfb5/image/upload/v1589883956/output-hello-world-csharp-program-min.png)

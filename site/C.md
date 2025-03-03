@@ -14,6 +14,6 @@ Since 2000, C has consistently ranked among the top four languages in the TIOBE 
 
 
 
-Below you can find example of writing 'Hello World' in C and here some [additional information](https://en.wikipedia.org/wiki/C_(programming_language))
+Here you can find some [additional information](https://en.wikipedia.org/wiki/C_(programming_language)) and below example of writing 'Hello World' in _C_: 
 
 ![Hello_World](https://cdn.mycplus.com/mycplus/wp-content/uploads/2018/01/hello_world_c.png)

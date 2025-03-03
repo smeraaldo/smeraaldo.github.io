@@ -14,6 +14,6 @@ Rust has been noted for its rapid adoption, and has been studied in programming 
 
 
 
-Below you can find example of writing 'Hello World' in Rust and here some [additional information](https://en.wikipedia.org/wiki/Rust_(programming_language))
+Here you can find some [additional information](https://en.wikipedia.org/wiki/Rust_(programming_language)) and below example of writing 'Hello World' in _Rust_: 
 
 ![Hello_World](https://i.ytimg.com/vi/HIcZCcFgJDo/maxresdefault.jpg)

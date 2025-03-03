@@ -12,6 +12,6 @@ Scratch takes its name from a technique used by disk jockeys called "scratching"
 
 
 
-Below you can find example of writing 'Hello World' in Scratch and here some [additional information](https://en.wikipedia.org/wiki/Scratch_(programming_language))
+Here you can find some [additional information](https://en.wikipedia.org/wiki/Scratch_(programming_language)) and below example of writing 'Hello World' in _Scratch_: 
 
-![Hello_World](https://www.researchgate.net/profile/Amanda-Ford-16/publication/266490101/figure/fig1/AS:295564441866240@1447479462077/Screenshot-of-a-classic-Hello-World-program-in-Scratch_Q320.jpg)
+![Hello_World](https://www.researchgate.net/profile/Amanda-Wilson-6/publication/266490101/figure/fig1/AS:295564441866240@1447479462077/Screenshot-of-a-classic-Hello-World-program-in-Scratch.png)

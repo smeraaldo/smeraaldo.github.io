@@ -12,6 +12,6 @@ Prolog has its roots in first-order logic, a formal logic, and unlike many other
 Prolog was one of the first logic programming languages and remains the most popular such language today, with several free and commercial implementations available. The language has been used for theorem proving, expert systems, term rewriting, type systems, and automated planning, as well as its original intended field of use, natural language processing.
 Prolog is a Turing-complete, general-purpose programming language, which is well-suited for intelligent knowledge-processing applications.
 
-Below you can find example of writing 'Hello World' in Prolog and here some [additional information](https://en.wikipedia.org/wiki/Prolog)
+Here you can find some [additional information](https://en.wikipedia.org/wiki/Prolog) and below example of writing 'Hello World' in _Prolog_: 
 
 ![Hello_World](https://c8.alamy.com/comp/2GKAH6W/prolog-language-hello-world-program-sample-in-editor-window-illustration-2GKAH6W.jpg)

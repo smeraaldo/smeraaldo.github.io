@@ -3,7 +3,7 @@ layout: default
 title: Visual Basic
 ---
 
-# <img src="https://www.kindpng.com/picc/m/13-131176_visual-basic-logo-png-transparent-png.png" alt="logo" width="30"/>**Visual Basic** (_№10_) 
+# <img src="https://clipground.com/images/visual-basic-logo-png-1.jpg" alt="logo" width="30"/>**Visual Basic** (_№10_) 
 
 **Ratings:** 2.04% | **Change:** +0.52% 
 
@@ -11,6 +11,6 @@ title: Visual Basic
 Microsoft's integrated development environment (IDE) for developing in Visual Basic is Visual Studio. Most Visual Studio editions are commercial; the only exceptions are Visual Studio Express and Visual Studio Community, which are freeware. In addition, the .NET Framework SDK includes a freeware command-line compiler called vbc.exe. Mono also includes a command-line VB.NET compiler.
 Visual Basic is often used in conjunction with the Windows Forms GUI library to make desktop apps for Windows. Programming for Windows Forms with Visual Basic involves dragging and dropping controls on a form using a GUI designer and writing corresponding code for each control.
 
-Below you can find example of writing 'Hello World' in Visual Basic and here some [additional information](https://en.wikipedia.org/wiki/Visual_Basic_(.NET))
+Here you can find some [additional information](https://en.wikipedia.org/wiki/Visual_Basic_(.NET)) and below example of writing 'Hello World' in _Visual Basic_: 
 
 ![Hello_World](https://www.tutlane.com/images/visual-basic/vb_console_app_structure.PNG)

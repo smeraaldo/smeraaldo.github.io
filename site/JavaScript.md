@@ -13,6 +13,6 @@ JavaScript is a high-level, often just-in-time compiled language that conforms t
 The ECMAScript standard does not include any input/output (I/O), such as networking, storage, or graphics facilities. In practice, the web browser or other runtime system provides JavaScript APIs for I/O.
 Although Java and JavaScript are similar in name and syntax, the two languages are distinct and differ greatly in design.
 
-Below you can find example of writing 'Hello World' in JavaScript and here some [additional information](https://en.wikipedia.org/wiki/JavaScript)
+Here you can find some [additional information](https://en.wikipedia.org/wiki/JavaScript) and below example of writing 'Hello World' in _JavaScript_: 
 
 ![Hello_World](https://i.ytimg.com/vi/79EkfGwqMQM/maxresdefault.jpg)

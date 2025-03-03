@@ -15,6 +15,6 @@ Borland added support for object-oriented programming to Turbo Pascal 5.5, which
 
 
 
-Below you can find example of writing 'Hello World' in Delphi/Object Pascal and here some [additional information](https://en.wikipedia.org/wiki/Object_Pascal)
+Here you can find some [additional information](https://en.wikipedia.org/wiki/Object_Pascal) and below example of writing 'Hello World' in _Delphi/Object Pascal_: 
 
 ![Hello_World](https://i.ytimg.com/vi/k2t-6fnmic8/maxresdefault.jpg)

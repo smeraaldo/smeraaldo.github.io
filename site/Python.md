@@ -12,6 +12,6 @@ Python is dynamically type-checked and garbage-collected. It supports multiple p
 Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language and first released it in 1991 as Python 0.9.0. Python 2.0 was released in 2000. Python 3.0, released in 2008, was a major revision not completely backward-compatible with earlier versions. Python 2.7.18, released in 2020, was the last release of Python 2.
 Python consistently ranks as one of the most popular programming languages, and has gained widespread use in the machine learning community.
 
-Below you can find example of writing 'Hello World' in Python and here some [additional information](https://en.wikipedia.org/wiki/Python_(programming_language))
+Here you can find some [additional information](https://en.wikipedia.org/wiki/Python_(programming_language)) and below example of writing 'Hello World' in _Python_: 
 
 ![Hello_World](https://www.instms.com/public/uploads/pictures/python-hello-world-program-using-print-function.jpg)

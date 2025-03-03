@@ -3,7 +3,7 @@ layout: default
 title: PHP
 ---
 
-# <img src="https://static.wikia.nocookie.net/programowanie/images/d/d1/Php_logo.png/revision/latest?cb=20190724220107&path-prefix=pl" alt="logo" width="30"/>**PHP** (_№14_) 
+# <img src="https://pngimg.com/d/php_PNG12.png" alt="logo" width="30"/>**PHP** (_№14_) 
 
 **Ratings:** 1.14% | **Change:** -0.37% 
 
@@ -13,6 +13,6 @@ The standard PHP interpreter, powered by the Zend Engine, is free software relea
 The PHP language has evolved without a written formal specification or standard, with the original implementation acting as the de facto standard that other implementations aimed to follow. 
 W3Techs reports that as of 27 October 2024 (about two years since  PHP 7 was discontinued and 11 months after the PHP 8.3 release), PHP 7 is still used by 50.0% of PHP websites, which is outdated and known to be insecure. In addition, the even more outdated (discontinued for 5+  years) and insecure PHP 5 is used by 13.2% and the no longer supported PHP 8.0 is also very popular, so  the majority of PHP websites do not use supported versions.
 
-Below you can find example of writing 'Hello World' in PHP and here some [additional information](https://en.wikipedia.org/wiki/PHP)
+Here you can find some [additional information](https://en.wikipedia.org/wiki/PHP) and below example of writing 'Hello World' in _PHP_: 
 
 ![Hello_World](https://www.wikihow.com/images/thumb/5/50/Write-a-Hello-World-Program-in-PHP-Step-3.jpg/aid1205745-v4-728px-Write-a-Hello-World-Program-in-PHP-Step-3.jpg)

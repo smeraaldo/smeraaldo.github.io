@@ -3,16 +3,13 @@ layout: default
 title: Ruby
 ---
 
-# Ruby
+# <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Ruby_logo_64x64.png" alt="logo" width="30"/>**Ruby** (_№19_) 
 
-**Position:** 19
+**Ratings:** 0.82% | **Change:** -0.17% 
 
-**Ratings:** 0.82%
+**Overview:** Ruby is an interpreted, high-level, general-purpose programming language. It was designed with an emphasis on programming productivity and simplicity. In Ruby, everything is an object, including primitive data types. It was developed in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan.
+Ruby is dynamically typed and uses garbage collection and just-in-time compilation. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. According to the creator, Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, BASIC, and Lisp.
 
-**Change:** -0.17%
+Below you can find example of writing 'Hello World' in Ruby and here some [additional information](https://en.wikipedia.org/wiki/Ruby_(programming_language))
 
-**Overview:** Ruby is an open-source and is freely available on the Web, but it is subject to a license. Ruby is a general-purpose, interpreted programming language. Ruby is a true object-oriented programming language. Ruby is a server-side scripting language similar to Python and PERL. Ruby can be used to write Common Gateway Interface (CGI) scripts. Ruby ...
-
-[Additional information](https://www.tutorialspoint.com/ruby/ruby_overview.htm)
-
-![Logo](http://img3.wikia.nocookie.net/__cb20130122221837/logopedia/images/c/c9/Ruby-language.png)
+![Hello_World](https://www.wikihow.com/images/6/6b/Write-a-Hello-World-Program-in-Ruby-Step-10.jpg)

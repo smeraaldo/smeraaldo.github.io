@@ -1,15 +1,10 @@
 ---
 layout: default
 title: Home
-title-heading: false
 ---
 
-# 20 Najpopularniejszych Języków Programowania Zgodnie z Indeksem TIOBE. 
+# 20 Most Popular Programming Languages ​​According to the TIOBE Index. 
 
-Indeks społeczności programistycznej TIOBE jest wskaźnikiem popularności języków programowania. Indeks jest aktualizowany raz w miesiącu. Oceny opierają się na liczbie wykwalifikowanych inżynierów na całym świecie, kursów i dostawców zewnętrznych. Popularne witryny internetowe Google, Amazon, Wikipedia, Bing i ponad 20 innych są używane do obliczania ocen. Ważne jest, aby pamiętać, że indeks TIOBE nie dotyczy najlepszego języka programowania ani języka, w którym napisano większość linii kodu. 
-
-Indeks może być używany do sprawdzenia, czy Twoje umiejętności programistyczne są nadal aktualne lub do podjęcia strategicznej decyzji o tym, jaki język programowania należy przyjąć, rozpoczynając budowę nowego systemu oprogramowania.
-
-Są też obrazki, krótkie opisy oraz linki do dokumentacji poszczególnych języków:
-
-[Lista języków](table.md)
+The TIOBE Programming Community Index is an indicator of the popularity of programming languages. The index is updated once a month. The ratings are based on the number of qualified engineers worldwide, courses, and third-party providers. Popular websites Google, Amazon, Wikipedia, Bing, and over 20 others are used to calculate the ratings. It is important to note that the TIOBE Index is not about the best programming language or the language in which the most lines of code are written. The index can be used to check whether your programming skills are still up to date or to make a strategic decision about which programming language to adopt when starting to build a new software system. 
+There are also images, short descriptions, and links to documentation for each language: 
+[List of languages](table.md)

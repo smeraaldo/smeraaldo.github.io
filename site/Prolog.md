@@ -3,16 +3,15 @@ layout: default
 title: Prolog
 ---
 
-# Prolog
+# <img src="https://dashboard.snapcraft.io/site_media/appmedia/2020/04/Prolog-logo-512.png" alt="logo" width="30"/>**Prolog** (_№20_) 
 
-**Position:** 20
+**Ratings:** 0.80% | **Change:** +0.03% 
 
-**Ratings:** 0.80%
+**Overview:** Prolog is a logic programming language that has its origins in artificial intelligence, automated theorem proving and computational linguistics.
+Prolog has its roots in first-order logic, a formal logic, and unlike many other programming languages, Prolog is intended primarily as a declarative programming language: the program is a set of facts and rules, which define relations.  A computation is initiated by running a query over the program.
+Prolog was one of the first logic programming languages and remains the most popular such language today, with several free and commercial implementations available. The language has been used for theorem proving, expert systems, term rewriting, type systems, and automated planning, as well as its original intended field of use, natural language processing.
+Prolog is a Turing-complete, general-purpose programming language, which is well-suited for intelligent knowledge-processing applications.
 
-**Change:** +0.03%
+Below you can find example of writing 'Hello World' in Prolog and here some [additional information](https://en.wikipedia.org/wiki/Prolog)
 
-**Overview:** Before we learn in detail about "Prolog-the language", let us first see what prolog programming is. Prolog refers to the different kinds of programming languages that are based on logic and reasoning. While traditional languages focus on solving problems step-by-step, prolog programming languages declaratively state the problems and their ...
-
-[Additional information](https://www.usaii.org/ai-insights/what-is-prolog-programming-language-an-overview)
-
-![Logo](https://1.bp.blogspot.com/-TjMZ_TPADrI/YVx_JkLoIAI/AAAAAAAACvc/zn_QJMp39T0SJGnQ4ncldsjYPN2oBR_zACLcBGAsYHQ/s1280/20211005_211949_0000.png)
+![Hello_World](https://c8.alamy.com/comp/2GKAH6W/prolog-language-hello-world-program-sample-in-editor-window-illustration-2GKAH6W.jpg)

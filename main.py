@@ -1,10 +1,9 @@
 import requests
-import pandas as pd
 from bs4 import BeautifulSoup
 from duckduckgo_search import DDGS
+import wikipediaapi as wiki
 
 url = "https://www.tiobe.com/tiobe-index/"
-tiktokers = []
 
 # Wyslanie żądania do strony (punkt 1).
 response = requests.get(url)
@@ -31,34 +30,41 @@ for tr in table.find_all('tr'):
 
     languages.append(language)
 
-# Wyszukujemy dodatkowe informacje za pomocą DuckDuckGo (punkt 3).
+# Wyszukujemy dodatkowe informacje za pomocą DuckDuckGo i wikipedia api (punkt 3).
+def get_wikipedia_summary(lang_name, lang_code="en"):
+    user_agent = "BotForProject/1.0 (https://github.com/smeraaldo/smeraaldo.github.io)"
+    wiki_wiki = wiki.Wikipedia(language=lang_code, user_agent=user_agent)
+    page = wiki_wiki.page(lang_name + " (programming language)")
+    
+    if page.exists():
+        return page.summary, page.fullurl
+    else:
+        return "No summary found.", ""
+
 with DDGS() as ddgs:
     for lang in languages:
         lang_name = lang['Name']
         
-        # Wyszukiwanie opisu (overview) języka.
-        query_info = f"{lang_name} programming language overview"
-        info_results = ddgs.text(query_info, max_results=1)
-        if info_results:
-            lang['Info'] = info_results[0].get('body', 'No description').strip()
-            lang['Info_URL'] = info_results[0].get('href', '')
-        else:
-            lang['Info'] = "No additional information"
-            lang['Info_URL'] = ""
+        # Wyszukiwanie opisu (overview) języka za pomocą wikipedii.
+        summary, url = get_wikipedia_summary(lang_name)
+        lang['Info'] = summary
+        lang['Info_URL'] = url
         
         # Wyszukiwanie obrazka (logo) języka.
-        query_image = f"{lang_name} programming language logo"
+        query_image = f"wikipedia {lang_name} programming language logo"
         image_results = ddgs.images(query_image, max_results=1)
         if image_results:
             lang['Image'] = image_results[0].get('image', '')
         else:
             lang['Image'] = ""
-
-# # Generujemy plik Markdown z tabelą używając pandas (punkt 2).
-# df = pd.DataFrame(languages)
-# with open('table.md', 'w', encoding='utf-8') as file:
-#     file.write('### Popularity of Programming Languages\n\n')
-#     file.write(df[['Position', 'Name', 'Ratings', 'Change']].to_markdown(index=False))
+        
+        # Wyszukiwanie przykładu kodu "Hello world" w tym języku.
+        query_image = f"Hello World program in {lang_name}"
+        image_results = ddgs.images(query_image, max_results=1)
+        if image_results:
+            lang['Hello_World'] = image_results[0].get('image', '')
+        else:
+            lang['Hello_World'] = ""
 
 # Generujemy witrynę (index.md).
 with open("index.md", "w", encoding="utf-8") as f:
@@ -67,10 +73,10 @@ with open("index.md", "w", encoding="utf-8") as f:
     f.write("title: Home\n")
     f.write("---\n\n")
 
-    f.write("# 20 Najpopularniejszych Języków Programowania Zgodnie z Indeksem TIOBE. \n\n")
-    f.write("Indeks społeczności programistycznej TIOBE jest wskaźnikiem popularności języków programowania. Indeks jest aktualizowany raz w miesiącu. Oceny opierają się na liczbie wykwalifikowanych inżynierów na całym świecie, kursów i dostawców zewnętrznych. Popularne witryny internetowe Google, Amazon, Wikipedia, Bing i ponad 20 innych są używane do obliczania ocen. Ważne jest, aby pamiętać, że indeks TIOBE nie dotyczy najlepszego języka programowania ani języka, w którym napisano większość linii kodu. Indeks może być używany do sprawdzenia, czy Twoje umiejętności programistyczne są nadal aktualne lub do podjęcia strategicznej decyzji o tym, jaki język programowania należy przyjąć, rozpoczynając budowę nowego systemu oprogramowania. \n")
-    f.write("Są też obrazki, krótkie opisy oraz linki do dokumentacji poszczególnych języków: \n")
-    f.write("[Lista języków](table.md)")
+    f.write("# 20 Most Popular Programming Languages ​​According to the TIOBE Index. \n\n")
+    f.write("The TIOBE Programming Community Index is an indicator of the popularity of programming languages. The index is updated once a month. The ratings are based on the number of qualified engineers worldwide, courses, and third-party providers. Popular websites Google, Amazon, Wikipedia, Bing, and over 20 others are used to calculate the ratings. It is important to note that the TIOBE Index is not about the best programming language or the language in which the most lines of code are written. The index can be used to check whether your programming skills are still up to date or to make a strategic decision about which programming language to adopt when starting to build a new software system. \n")
+    f.write("There are also images, short descriptions, and links to documentation for each language: \n")
+    f.write("[List of languages](table.md)")
 
 # Generujemy listę (table.md) w katalogu głównym (punkt 4).
 with open("table.md", "w", encoding="utf-8") as f:
@@ -81,17 +87,23 @@ with open("table.md", "w", encoding="utf-8") as f:
 
     f.write("# Popularity of Programming Languages\n\n")
     f.write("Below is a list of programming languages according to the TIOBE index, click on the name to find more information.\n\n")
-    f.write("| Position | Name | Ratings | Change | \n")
-    f.write("| --- | --- | --- | --- |\n")
+    f.write("| Position | Logo | Name | Ratings | Change | \n")
+    f.write("| --- | --- | --- | --- | --- |\n")
     for lang in languages:
-        # Przygotowanie bezpiecznej nazwy pliku (zamiana spacji i niepożądanych znaków)
-        safe_name = lang['Name'].replace(' ', '_').replace('/', '_')
-        name_link = f"[{lang['Name']}](./site/{safe_name}.md)"
-        f.write(f"| {lang['Position']} | {name_link} | {lang['Ratings']} | {lang['Change']} |\n")
+        # Przygotowanie bezpiecznej nazwy pliku (zamiana spacji i niepożądanych znaków).
+        safe_name = lang['Name'].replace(' ', '_').replace('/', '_').replace('#', 'Sharp')
+        page_link = f"[{lang['Name']}](./site/{safe_name}.md)"
+
+        if lang['Image']:
+            logo_md = f'<img src="{lang["Image"]}" alt="logo" width="30"/>'
+        else:
+            logo_md = " "
+
+        f.write(f"| {lang['Position']} | {logo_md} | {page_link} | {lang['Ratings']} | {lang['Change']} |\n")
 
 # Generujemy podstrony dla każdego języka w katalogu 'site'.
 for lang in languages:
-    safe_name = lang['Name'].replace(' ', '_').replace('/', '_')
+    safe_name = lang['Name'].replace(' ', '_').replace('/', '_').replace('#', 'Sharp')
     filename = f"site/{safe_name}.md"
     with open(filename, "w", encoding="utf-8") as f:
         f.write("---\n")
@@ -99,11 +111,12 @@ for lang in languages:
         f.write(f"title: {lang['Name']}\n")
         f.write("---\n\n")
 
-        f.write(f"# {lang['Name']}\n\n")
-        f.write(f"**Position:** {lang['Position']}\n\n")
-        f.write(f"**Ratings:** {lang['Ratings']}\n\n")
-        f.write(f"**Change:** {lang['Change']}\n\n")
+        f.write(f'# <img src="{lang["Image"]}" alt="logo" width="30"/>')
+        f.write(f"**{lang['Name']}** (_№{lang['Position']}_) \n\n")
+        f.write(f"**Ratings:** {lang['Ratings']} | **Change:** {lang['Change']} \n\n")
         f.write(f"**Overview:** {lang['Info']}\n\n")
-        f.write(f"[Additional information]({lang['Info_URL']})\n\n")
-        if lang['Image']:
-            f.write(f"![Logo]({lang['Image']})\n")
+
+        if lang['Info_URL']:
+            f.write(f"Below you can find example of writing 'Hello World' in {lang['Name']} and here some [additional information]({lang['Info_URL']})\n\n")
+        if lang['Hello_World']:
+            f.write(f"![Hello_World]({lang['Hello_World']})\n")

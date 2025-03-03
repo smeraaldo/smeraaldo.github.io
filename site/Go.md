@@ -3,16 +3,17 @@ layout: default
 title: Go
 ---
 
-# Go
+# <img src="https://image.pngaaa.com/937/1523937-middle.png" alt="logo" width="30"/>**Go** (_№8_) 
 
-**Position:** 8
+**Ratings:** 2.26% | **Change:** +0.53% 
 
-**Ratings:** 2.26%
+**Overview:** Go is a high-level general purpose programming language that is statically typed and compiled. It is known for the simplicity of its syntax and the efficiency of development that it enables by the inclusion of a large standard library supplying many needs for common projects. It was designed at Google in 2009 by Robert Griesemer, Rob Pike, and Ken Thompson. It is syntactically similar to C, but also has memory safety, garbage collection, structural typing, and CSP-style concurrency. It is often referred to as Golang to avoid ambiguity and because of its former domain name, golang.org, but its proper name is Go.
+There are two major implementations:
 
-**Change:** +0.53%
+The original, self-hosting compiler toolchain, initially developed inside Google;
+A frontend written in C++, called gofrontend, originally a GCC frontend, providing gccgo, a GCC-based Go compiler; later extended to also support LLVM, providing an LLVM-based Go compiler called gollvm.
+A third-party source-to-source compiler, GopherJS, transpiles Go to JavaScript for front-end web development.
 
-**Overview:** The Go programming language is an open source project to make programmers more productive. Go is expressive, concise, clean, and efficient. ... This topic gives an overview of developing and publishing modules. Module release and versioning workflow. When you develop modules for use by other developers, you can follow a workflow that helps ...
+Below you can find example of writing 'Hello World' in Go and here some [additional information](https://en.wikipedia.org/wiki/Go_(programming_language))
 
-[Additional information](https://go.dev/doc/)
-
-![Logo](https://www.alamy.com/aggregator-api/download?url=https://c8.alamy.com/comp/2M8NA85/go-programming-language-logo-white-background-2M8NA85.jpg)
+![Hello_World](https://i.ytimg.com/vi/-Q7NzMYEOWs/maxresdefault.jpg)

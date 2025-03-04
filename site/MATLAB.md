@@ -3,7 +3,7 @@ layout: default
 title: MATLAB
 ---
 
-# <img src="https://logos-world.net/wp-content/uploads/2020/12/MATLAB-Emblem.png" alt="logo" width="30"/>**MATLAB** (_№16_) 
+# <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="logo" width="30"/>**MATLAB** (_№16_) 
 
 **Ratings:** 0.98% | **Change:** -0.28% 
 

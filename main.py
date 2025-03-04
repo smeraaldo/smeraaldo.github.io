@@ -54,7 +54,7 @@ with DDGS() as ddgs:
         lang['Info_URL'] = url
         
         # Wyszukiwanie obrazka (logo) języka.
-        query_image = f"wikipedia {lang_name} programming language logo"
+        query_image = f"{lang_name} programming language logo kindpng"
         image_results = ddgs.images(query_image, max_results=1)
         if image_results:
             lang['Image'] = image_results[0].get('image', '')
@@ -77,12 +77,12 @@ with open("index.md", "w", encoding="utf-8") as f:
     f.write("---\n\n")
 
     f.write("# 20 Most Popular Programming Languages ​​According to the TIOBE Index. \n\n")
-    f.write("_The TIOBE Programming Community Index_ is an indicator of the popularity of programming languages. The index is updated once a month. The ratings are based on the number of qualified engineers worldwide, courses, and third-party providers. Popular websites Google, Amazon, Wikipedia, Bing, and over 20 others are used to calculate the ratings. It is important to note that _the TIOBE Index_ is not about the best programming language or the language in which the most lines of code are written. The index can be used to check whether your programming skills are still up to date or to make a strategic decision about which programming language to adopt when starting to build a new software system. \n")
+    f.write("_The TIOBE Programming Community Index_ is an indicator of the popularity of programming languages. The index is updated once a month. The ratings are based on the number of qualified engineers worldwide, courses, and third-party providers. Popular websites _Google, Amazon, Wikipedia, Bing, and over 20 others_ are used to calculate the ratings. It is important to note that _the TIOBE Index_ is not about the best programming language or the language in which the most lines of code are written. The index can be used to check whether your programming skills are still up to date or to make a strategic decision about which programming language to adopt when starting to build a new software system. \n")
     f.write("There are also images, short descriptions, and links to documentation for each language: \n\n")
-    f.write("* [List of languages](table.md)")
+    f.write("* [List of languages](site/table.html)")
 
 # Generujemy listę (table.md) w katalogu głównym (punkt 4).
-with open("table.md", "w", encoding="utf-8") as f:
+with open("site/table.md", "w", encoding="utf-8") as f:
     f.write("---\n")
     f.write("layout: default\n")
     f.write("title: Table\n")
@@ -95,7 +95,7 @@ with open("table.md", "w", encoding="utf-8") as f:
     for lang in languages:
         # Przygotowanie bezpiecznej nazwy pliku (zamiana spacji i niepożądanych znaków).
         safe_name = lang['Name'].replace(' ', '_').replace('/', '_').replace('#', 'Sharp')
-        page_link = f"[{lang['Name']}](./site/{safe_name}.md)"
+        page_link = f"[{lang['Name']}](./{safe_name}.html)"
 
         if lang['Image']:
             logo_md = f'<img src="{lang["Image"]}" alt="logo" width="30"/>'

@@ -3,7 +3,7 @@ layout: default
 title: Go
 ---
 
-# <img src="https://image.pngaaa.com/937/1523937-middle.png" alt="logo" width="30"/>**Go** (_№8_) 
+# <img src="https://static.vecteezy.com/system/resources/previews/012/697/296/original/3d-golang-programming-language-logo-free-png.png" alt="logo" width="30"/>**Go** (_№8_) 
 
 **Ratings:** 2.26% | **Change:** +0.53% 
 

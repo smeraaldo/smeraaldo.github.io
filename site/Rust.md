@@ -3,7 +3,7 @@ layout: default
 title: Rust
 ---
 
-# <img src="https://www.clipartkey.com/mpngs/m/230-2309196_rust-programming-language-wikipedia-rust-language-logo-png.png" alt="logo" width="30"/>**Rust** (_№13_) 
+# <img src="https://www.vhv.rs/dpng/d/415-4150318_rust-programming-language-logo-hd-png-download.png" alt="logo" width="30"/>**Rust** (_№13_) 
 
 **Ratings:** 1.47% | **Change:** +0.42% 
 

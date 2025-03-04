@@ -3,7 +3,7 @@ layout: default
 title: SQL
 ---
 
-# <img src="https://logodix.com/logo/542135.jpg" alt="logo" width="30"/>**SQL** (_№7_) 
+# <img src="https://www.vhv.rs/dpng/d/256-2563210_sql-programming-language-logo-hd-png-download.png" alt="logo" width="30"/>**SQL** (_№7_) 
 
 **Ratings:** 2.87% | **Change:** +1.04% 
 

@@ -3,7 +3,7 @@ layout: default
 title: C++
 ---
 
-# <img src="https://i.pinimg.com/originals/d6/4c/09/d64c095f35faf9c91bf9dd6b7f117b02.png" alt="logo" width="30"/>**C++** (_№2_) 
+# <img src="https://img1.pnghut.com/8/18/6/bxvE1KeDqf/logo-symbol-computer-programming-language.jpg" alt="logo" width="30"/>**C++** (_№2_) 
 
 **Ratings:** 11.37% | **Change:** +0.84% 
 
@@ -12,8 +12,6 @@ C++ was designed with systems programming and embedded, resource-constrained sof
 C++ is standardized by the International Organization for Standardization (ISO), with the latest standard version ratified and published by ISO in October 2024 as ISO/IEC 14882:2024 (informally known as C++23). The C++ programming language was initially standardized in 1998 as ISO/IEC 14882:1998, which was then amended by the C++03, C++11, C++14, C++17, and C++20 standards. The current C++23 standard supersedes these with new features and an enlarged standard library. Before the initial standardization in 1998, C++ was developed by Stroustrup at Bell Labs since 1979 as an extension of the C language; he wanted an efficient and flexible language similar to C that also provided high-level features for program organization. Since 2012, C++ has been on a three-year release schedule with C++26 as the next planned standard.
 Despite its widespread adoption, some notable programmers have criticized the C++ language, including Linus Torvalds, Richard Stallman, Joshua Bloch, Ken Thompson, and Donald Knuth.
 
-
-
 Here you can find some [additional information](https://en.wikipedia.org/wiki/C%2B%2B) and below example of writing 'Hello World' in _C++_: 
 
-![Hello_World](https://cdn.mycplus.com/mycplus/wp-content/uploads/2018/01/hello_world_cpp.png)
+![Hello_World](https://i.ytimg.com/vi/w-RMbt2FZnU/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHAgJSh_MA8=&rs=AOn4CLA3-e7cibcZD0WC0OZFTp3PMYABwA)

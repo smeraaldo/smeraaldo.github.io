@@ -3,7 +3,7 @@ layout: default
 title: PHP
 ---
 
-# <img src="https://pngimg.com/d/php_PNG12.png" alt="logo" width="30"/>**PHP** (_№14_) 
+# <img src="https://www.liblogo.com/img-logo/ph424pa62-php-logo-php-logo-png.png" alt="logo" width="30"/>**PHP** (_№14_) 
 
 **Ratings:** 1.14% | **Change:** -0.37% 
 

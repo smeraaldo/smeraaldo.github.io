@@ -12,6 +12,8 @@ Java gained popularity shortly after its release, and has been a popular program
 Java was designed by James Gosling at Sun Microsystems. It was released in May 1995 as a core component of Sun's Java platform. The original and reference implementation Java compilers, virtual machines, and class libraries were released by Sun under proprietary licenses. As of May 2007, in compliance with the specifications of the Java Community Process, Sun had relicensed most of its Java technologies under the GPL-2.0-only license. Oracle, which bought Sun in 2010, offers its own HotSpot Java Virtual Machine. However, the official reference implementation is the OpenJDK JVM, which is open-source software used by most developers and is the default JVM for almost all Linux distributions.
 Java 23 is the version current as of September 2024, and Java 24 has a Final Release Candidate, set for release on 18 March 2025. Java 20 and 22 are no longer maintained. Java 8, 11, 17, and 21 are long-term support versions still under maintenance.
 
+
+
 Here you can find some [additional information](https://en.wikipedia.org/wiki/Java_(programming_language)) and below example of writing 'Hello World' in _Java_: 
 
 ![Hello_World](https://cdn.ttgtmedia.com/rms/onlineimages/hello-world-examples_mobile.gif)

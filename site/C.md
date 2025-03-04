@@ -3,7 +3,7 @@ layout: default
 title: C
 ---
 
-# <img src="https://i.pinimg.com/originals/d6/4c/09/d64c095f35faf9c91bf9dd6b7f117b02.png" alt="logo" width="30"/>**C** (_№4_) 
+# <img src="https://www.kindpng.com/picc/m/403-4039227_c-language-logo-png-transparent-png.png" alt="logo" width="30"/>**C** (_№4_) 
 
 **Ratings:** 9.84% | **Change:** -1.14% 
 

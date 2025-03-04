@@ -13,4 +13,4 @@ Visual Basic is often used in conjunction with the Windows Forms GUI library to 
 
 Here you can find some [additional information](https://en.wikipedia.org/wiki/Visual_Basic_(.NET)) and below example of writing 'Hello World' in _Visual Basic_: 
 
-![Hello_World](https://www.tutlane.com/images/visual-basic/vb_console_app_structure.PNG)
+![Hello_World](https://i.ytimg.com/vi/pM8zmoLLEz4/maxresdefault.jpg)

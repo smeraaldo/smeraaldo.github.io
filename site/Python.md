@@ -3,7 +3,7 @@ layout: default
 title: Python
 ---
 
-# <img src="https://logohistory.net/wp-content/uploads/2023/06/Python-Emblem.png" alt="logo" width="30"/>**Python** (_№1_) 
+# <img src="https://www.kindpng.com/picc/m/0-2520_python-programming-language-logo-png-transparent-png.png" alt="logo" width="30"/>**Python** (_№1_) 
 
 **Ratings:** 23.88% | **Change:** +8.72% 
 

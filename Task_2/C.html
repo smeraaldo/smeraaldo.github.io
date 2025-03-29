@@ -7,6 +7,25 @@
   <title>C</title>
 
   <style>
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0.95);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.01);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .bounce-in {
+        animation: bounceIn 0.6s ease-out;
+    }
+
     /* Hover effect for code example cards */
     .code-card {
         transition: all 0.3s ease;
@@ -44,7 +63,7 @@
       Description
     </h1>
     <p class="text-gray-700 text-lg leading-relaxed mx-8">
-        C (pronounced – like the letter c) is a general-purpose programming language. It was created in the 1970s by Dennis Ritchie and remains very widely used and influential. By design, C’s features cleanly reflect the capabilities of the targeted CPUs. It has found lasting use in operating systems code (especially in kernels), device drivers, and protocol stacks, but its use in application software has been decreasing. C is commonly used on computer architectures that range from the largest supercomputers to the smallest microcontrollers and embedded systems. A successor to the programming language B, C was originally developed at Bell Labs by Ritchie between 1972 and 1973 to construct utilities running on Unix. It was applied to re-implementing the kernel of the Unix operating system. During the 1980s, C gradually gained popularity. It has become one of the most widely used programming languages, with C compilers available for practically all modern computer architectures and operating systems. The book The C Programming Language, co-authored by the original language designer, served for many years as the de facto standard for the language. C has been standardized since 1989 by the American National Standards Institute (ANSI) and, subsequently, jointly by the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC).
+        C (pronounced - like the letter c) is a general-purpose programming language. It was created in the 1970s by Dennis Ritchie and remains very widely used and influential. By design, C’s features cleanly reflect the capabilities of the targeted CPUs. It has found lasting use in operating systems code (especially in kernels), device drivers, and protocol stacks, but its use in application software has been decreasing. C is commonly used on computer architectures that range from the largest supercomputers to the smallest microcontrollers and embedded systems.
     </p>
     <p class="text-gray-700 text-lg leading-relaxed mt-4 mx-8">
         C is an imperative procedural language, supporting structured programming, lexical variable scope, and recursion, with a static type system. It was designed to be compiled to provide low-level access to memory and language constructs that map efficiently to machine instructions, all with minimal runtime support. Despite its low-level capabilities, the language was designed to encourage cross-platform programming. A standards-compliant C program written with portability in mind can be compiled for a wide variety of computer platforms and operating systems with few changes to its source code. Since 2000, C has consistently ranked among the top four languages in the TIOBE index, a measure of the popularity of programming languages. 
@@ -59,7 +78,7 @@
         
         <div class="flex flex-none gap-6 justify-center">
         
-            <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full sm:w-[48%] lg:w-[31%] xl:w-[23%]">
+            <div class="code-card bounce-in bg-sky-50 p-4 rounded-lg shadow-md w-full sm:w-[48%] lg:w-[31%] xl:w-[23%]">
                 <h3 class="text-lg font-semibold text-blue-500 mb-2">Hello World</h3>
                 <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
 #include &lt;stdio.h&gt;
@@ -71,7 +90,7 @@ int main() {
                 </pre>
             </div>
             
-            <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full sm:w-[48%] lg:w-[31%] xl:w-[23%]">
+            <div class="code-card bounce-in bg-sky-50 p-4 rounded-lg shadow-md w-full sm:w-[48%] lg:w-[31%] xl:w-[23%]">
                 <h3 class="text-lg font-semibold text-blue-500 mb-2">Sum of Two Numbers</h3>
                 <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
 #include &lt;stdio.h&gt;
@@ -84,7 +103,7 @@ int main() {
                 </pre>
             </div>
             
-            <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full sm:w-[48%] lg:w-[31%] xl:w-[23%]">
+            <div class="code-card bounce-in bg-sky-50 p-4 rounded-lg shadow-md w-full sm:w-[48%] lg:w-[31%] xl:w-[23%]">
                 <h3 class="text-lg font-semibold text-blue-500 mb-2">Function for Random Number</h3>
                 <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
 #include &lt;stdio.h&gt;
@@ -102,7 +121,7 @@ int main() {
                 </pre>
             </div>
 
-            <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full sm:w-[48%] lg:w-[31%] xl:w-[23%]">
+            <div class="code-card bounce-in bg-sky-50 p-4 rounded-lg shadow-md w-full sm:w-[48%] lg:w-[31%] xl:w-[23%]">
                 <h3 class="text-lg font-semibold text-blue-500 mb-2">While Loop</h3>
                 <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
 #include &lt;stdio.h&gt;

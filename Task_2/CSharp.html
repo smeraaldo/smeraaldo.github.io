@@ -7,6 +7,25 @@
   <title>C#</title>
 
   <style>
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0.95);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.01);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .bounce-in {
+        animation: bounceIn 0.6s ease-out;
+    }
+
     /* Hover effect for code example cards */
     .code-card {
         transition: all 0.3s ease;
@@ -59,7 +78,7 @@
         
         <div class="flex flex-auto gap-6 justify-center">
         
-            <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full">
+            <div class="code-card bounce-in bg-sky-50 p-4 rounded-lg shadow-md w-full">
                 <h3 class="text-lg font-semibold text-blue-500 mb-2">Hello World</h3>
                 <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
 using System;
@@ -74,7 +93,7 @@ class Program
                 </pre>
             </div>
             
-            <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full">
+            <div class="code-card bounce-in bg-sky-50 p-4 rounded-lg shadow-md w-full">
                 <h3 class="text-lg font-semibold text-blue-500 mb-2">Sum of Two Numbers</h3>
                 <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
 using System;
@@ -90,7 +109,7 @@ class Program
                 </pre>
             </div>
             
-            <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full">
+            <div class="code-card bounce-in bg-sky-50 p-4 rounded-lg shadow-md w-full">
                 <h3 class="text-lg font-semibold text-blue-500 mb-2">Function for Random Number</h3>
                 <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
 using System;
@@ -107,7 +126,7 @@ class Program
                 </pre>
             </div>
 
-            <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full">
+            <div class="code-card bounce-in bg-sky-50 p-4 rounded-lg shadow-md w-full">
                 <h3 class="text-lg font-semibold text-blue-500 mb-2">While Loop</h3>
                 <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
 using System;

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./build.css" rel="stylesheet">
+  <title>C</title>
+
+  <style>
+    /* Hover effect for code example cards */
+    .code-card {
+        transition: all 0.3s ease;
+    }
+
+    .code-card:hover {
+        background-color: #ecfafc; /* Lighter background color on hover */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Darker shadow on hover */
+        transform: translateY(-5px); /* Slight lift on hover */
+    }
+
+    .code-card h3 {
+        transition: color 0.3s ease;
+    }
+
+    .code-card:hover h3 {
+        color: #0288d1; /* Change text color of the heading on hover */
+    }
+  </style>
+</head>
+<body class="bg-sky-100 dark:bg-gray-800">
+  <!-- Header Section -->
+  <div class="mt-16 mx-30 p-6 bg-blue-50 shadow-lg">
+    <h1 class="text-8xl font-bold bg-sky-300 text-sky-900 p-4 text-center">
+      <strong>C</strong>
+    </h1>
+    <p class="p-2 text-center italic bg-cyan-50 text-sky-800">
+      I don't care what you think, I'm faster than you!
+    </p>
+  </div>
+
+  <!-- Description Section -->
+  <div class="mt-10 mx-36 p-6 bg-blue-50 shadow-lg">
+    <h1 class="mb-4 text-2xl font-bold bg-linear-to-r from-sky-100 to-sky-50 text-sky-600 p-4">
+      Description
+    </h1>
+    <p class="text-gray-700 text-lg leading-relaxed mx-8">
+        C (pronounced – like the letter c) is a general-purpose programming language. It was created in the 1970s by Dennis Ritchie and remains very widely used and influential. By design, C’s features cleanly reflect the capabilities of the targeted CPUs. It has found lasting use in operating systems code (especially in kernels), device drivers, and protocol stacks, but its use in application software has been decreasing. C is commonly used on computer architectures that range from the largest supercomputers to the smallest microcontrollers and embedded systems. A successor to the programming language B, C was originally developed at Bell Labs by Ritchie between 1972 and 1973 to construct utilities running on Unix. It was applied to re-implementing the kernel of the Unix operating system. During the 1980s, C gradually gained popularity. It has become one of the most widely used programming languages, with C compilers available for practically all modern computer architectures and operating systems. The book The C Programming Language, co-authored by the original language designer, served for many years as the de facto standard for the language. C has been standardized since 1989 by the American National Standards Institute (ANSI) and, subsequently, jointly by the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC).
+    </p>
+    <p class="text-gray-700 text-lg leading-relaxed mt-4 mx-8">
+        C is an imperative procedural language, supporting structured programming, lexical variable scope, and recursion, with a static type system. It was designed to be compiled to provide low-level access to memory and language constructs that map efficiently to machine instructions, all with minimal runtime support. Despite its low-level capabilities, the language was designed to encourage cross-platform programming. A standards-compliant C program written with portability in mind can be compiled for a wide variety of computer platforms and operating systems with few changes to its source code. Since 2000, C has consistently ranked among the top four languages in the TIOBE index, a measure of the popularity of programming languages. 
+    </p>
+  </div>
+
+    <!-- Code Examples Section -->
+    <div class="mt-10 mb-24 mx-36 p-6 bg-blue-50 shadow-lg">
+        <h1 class="mb-4 text-2xl font-bold bg-linear-to-r from-sky-100 to-sky-50 text-sky-600 p-4">
+        Code examples
+        </h1>
+        
+        <div class="flex flex-wrap gap-6 justify-center">
+        
+            <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full sm:w-[48%] lg:w-[31%] xl:w-[23%]">
+                <h3 class="text-lg font-semibold text-blue-500 mb-2">Hello World</h3>
+                <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
+#include &lt;stdio.h&gt;
+            
+int main() {
+    printf("Hello, World!");
+    return 0;
+}
+                </pre>
+            </div>
+            
+            <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full sm:w-[48%] lg:w-[31%] xl:w-[23%]">
+                <h3 class="text-lg font-semibold text-blue-500 mb-2">Sum of Two Numbers</h3>
+                <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
+#include &lt;stdio.h&gt;
+            
+int main() {
+    int a = 5, b = 3;
+    printf("Sum: %d", a + b);
+    return 0;
+}
+                </pre>
+            </div>
+            
+            <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full sm:w-[48%] lg:w-[31%] xl:w-[23%]">
+                <h3 class="text-lg font-semibold text-blue-500 mb-2">Function for Random Number</h3>
+                <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;time.h&gt;
+
+using namespace std;
+
+int main() {
+    srand(time(0));
+    int rnum = rand() % 10;
+    printf("Random Number: %d", rnum);
+    return 0;
+}
+                </pre>
+            </div>
+
+            <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full sm:w-[48%] lg:w-[31%] xl:w-[23%]">
+                <h3 class="text-lg font-semibold text-blue-500 mb-2">While Loop</h3>
+                <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
+#include &lt;stdio.h&gt;
+            
+int main() {
+    int i = 0;
+    while (i < 5) {
+        printf("%d\n", i);
+        i++;
+    }
+    return 0;
+}
+                </pre>
+            </div>
+
+        </div>
+    </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-sky-50 text-blue-500 p-4 mt-10 shadow-2xl">
+    <div class="container mx-auto text-center">
+      <p>
+        <a href="https://devdocs.io/c/" class="text-sky-600 hover:text-sky-900">
+          C Documentation Website
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

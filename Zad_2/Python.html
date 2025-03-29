@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./build.css" rel="stylesheet">
+  <title>Python</title>
+
+  <style>
+    /* Hover effect for code example cards */
+    .code-card {
+        transition: all 0.3s ease;
+    }
+
+    .code-card:hover {
+        background-color: #ecfafc; /* Lighter background color on hover */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Darker shadow on hover */
+        transform: translateY(-5px); /* Slight lift on hover */
+    }
+
+    .code-card h3 {
+        transition: color 0.3s ease;
+    }
+
+    .code-card:hover h3 {
+        color: #0288d1; /* Change text color of the heading on hover */
+    }
+  </style>
+</head>
+<body class="bg-sky-100 dark:bg-gray-800">
+  <!-- Header Section -->
+  <div class="mt-16 mx-30 p-6 bg-blue-50 shadow-lg">
+    <h1 class="text-8xl font-bold bg-sky-300 text-sky-900 p-4 text-center">
+      <strong>PYTHON</strong>
+    </h1>
+    <p class="p-2 text-center italic bg-cyan-50 text-sky-800">
+      Simple is better than complex.
+    </p>
+  </div>
+
+  <!-- Description Section -->
+  <div class="mt-10 mx-36 p-6 bg-blue-50 shadow-lg">
+    <h1 class="mb-4 text-2xl font-bold bg-linear-to-r from-sky-100 to-sky-50 text-sky-600 p-4">
+      Description
+    </h1>
+    <p class="text-gray-700 text-lg leading-relaxed mx-8">
+      Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. 
+      Python is dynamically type-checked and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), 
+      object-oriented and functional programming. It is often described as a “batteries included” language due to its comprehensive standard library.
+    </p>
+    <p class="text-gray-700 text-lg leading-relaxed mt-4 mx-8">
+      Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language and first released it in 1991 as Python 0.9.0. 
+      Python 2.0 was released in 2000. Python 3.0, released in 2008, was a major revision not completely backward-compatible with earlier versions. 
+      Python 2.7.18, released in 2020, was the last release of Python 2. Python consistently ranks as one of the most popular programming languages, 
+      and has gained widespread use in the machine learning community.
+    </p>
+  </div>
+
+<!-- Code Examples Section -->
+<div class="mt-10 mb-24 mx-36 p-6 bg-blue-50 shadow-lg">
+    <h1 class="mb-4 text-2xl font-bold bg-linear-to-r from-sky-100 to-sky-50 text-sky-600 p-4">
+        Code examples
+    </h1>
+
+    <div class="flex flex-wrap gap-6 justify-center">
+
+        <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full sm:w-[48%] lg:w-[31%] xl:w-[23%]">
+            <h3 class="text-lg font-semibold text-blue-500 mb-2">Hello World</h3>
+            <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
+print("Hello, World!")
+            </pre>
+        </div>
+
+        <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full sm:w-[48%] lg:w-[31%] xl:w-[23%]">
+            <h3 class="text-lg font-semibold text-blue-500 mb-2">Sum of Two Numbers</h3>
+            <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
+a = 5
+b = 3
+print("Sum:", a + b)
+            </pre>
+        </div>
+
+        <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full sm:w-[48%] lg:w-[31%] xl:w-[23%]">
+            <h3 class="text-lg font-semibold text-blue-500 mb-2">Function for random number</h3>
+            <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
+import random
+    
+print(random.randint(0,9))
+            </pre>
+        </div>
+
+        <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full sm:w-[48%] lg:w-[31%] xl:w-[23%]">
+            <h3 class="text-lg font-semibold text-blue-500 mb-2">Fibonacci</h3>
+            <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
+def fib(n):
+    if n <= 1:
+        return n
+    return fib(n-1) + fib(n-2)
+    
+print([fib(i) for i in range(10)])
+            </pre>
+        </div>
+
+        <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full sm:w-[48%] lg:w-[31%] xl:w-[23%]">
+            <h3 class="text-lg font-semibold text-blue-500 mb-2">If Statement</h3>
+            <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
+x = 10
+if x > 5:
+    print("x is greater than 5")
+else:
+    print("x is 5 or less")
+            </pre>
+        </div>
+
+        <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full sm:w-[48%] lg:w-[31%] xl:w-[48%]">
+            <h3 class="text-lg font-semibold text-blue-500 mb-2">List Comprehension</h3>
+            <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
+numbers = [x for x in range(10) if x % 2 == 0]
+print(numbers)
+            </pre>
+        </div>
+
+        <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full sm:w-[48%] lg:w-[31%] xl:w-[23%]">
+            <h3 class="text-lg font-semibold text-blue-500 mb-2">While Loop</h3>
+            <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+            </pre>
+        </div>
+
+    </div>
+</div>
+
+  <!-- Footer Section -->
+  <footer class="bg-sky-50 text-blue-500 p-4 mt-10 shadow-2xl">
+    <div class="container mx-auto text-center">
+      <p>
+        <a href="https://docs.python.org/3/" class="text-sky-600 hover:text-sky-900">
+          Official Python Documentation Website
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

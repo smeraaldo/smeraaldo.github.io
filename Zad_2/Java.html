@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./build.css" rel="stylesheet">
+  <title>Java</title>
+
+  <style>
+    /* Hover effect for code example cards */
+    .code-card {
+        transition: all 0.3s ease;
+    }
+
+    .code-card:hover {
+        background-color: #ecfafc; /* Lighter background color on hover */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Darker shadow on hover */
+        transform: translateY(-5px); /* Slight lift on hover */
+    }
+
+    .code-card h3 {
+        transition: color 0.3s ease;
+    }
+
+    .code-card:hover h3 {
+        color: #0288d1; /* Change text color of the heading on hover */
+    }
+  </style>
+</head>
+<body class="bg-sky-100 dark:bg-gray-800">
+  <!-- Header Section -->
+  <div class="mt-16 mx-30 p-6 bg-blue-50 shadow-lg">
+    <h1 class="text-8xl font-bold bg-sky-300 text-sky-900 p-4 text-center">
+      <strong>Java</strong>
+    </h1>
+    <p class="p-2 text-center italic bg-cyan-50 text-sky-800">
+      Write once, run anywhere.
+    </p>
+  </div>
+
+  <!-- Description Section -->
+  <div class="mt-10 mx-36 p-6 bg-blue-50 shadow-lg">
+    <h1 class="mb-4 text-2xl font-bold bg-linear-to-r from-sky-100 to-sky-50 text-sky-600 p-4">
+      Description
+    </h1>
+    <p class="text-gray-700 text-lg leading-relaxed mx-8">
+        Java is a high-level, general-purpose, memory-safe, object-oriented programming language. 
+        It is intended to let programmers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need to recompile. 
+        Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture. 
+        The syntax of Java is similar to C and C++, but has fewer low-level facilities than either of them. The Java runtime provides dynamic capabilities (such as reflection and runtime code modification) 
+        that are typically not available in traditional compiled languages. 
+    </p>
+    <p class="text-gray-700 text-lg leading-relaxed mt-4 mx-8">
+        Java gained popularity shortly after its release, and has been a popular programming language since then. Java was the third most popular programming language in 2022 according to GitHub.
+        Although still widely popular, there has been a gradual decline in use of Java in recent years with other languages using JVM gaining popularity. Java was designed by James Gosling at Sun Microsystems. 
+        It was released in May 1995 as a core component of Sun’s Java platform. The original and reference implementation Java compilers, virtual machines, and class libraries were released by Sun under proprietary licenses.
+    </p>
+  </div>
+
+    <!-- Code Examples Section -->
+    <div class="mt-10 mb-24 mx-36 p-6 bg-blue-50 shadow-lg">
+        <h1 class="mb-4 text-2xl font-bold bg-linear-to-r from-sky-100 to-sky-50 text-sky-600 p-4">
+        Code examples
+        </h1>
+        
+        <div class="flex flex-col gap-6 justify-center">
+        
+            <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full">
+                <h3 class="text-lg font-semibold text-blue-500 mb-2">Hello World</h3>
+                <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+                </pre>
+            </div>
+            
+            <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full">
+                <h3 class="text-lg font-semibold text-blue-500 mb-2">Sum of Two Numbers</h3>
+                <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
+public class Sum {
+    public static void main(String[] args) {
+        int a = 5, b = 3;
+        System.out.println("Sum: " + (a + b));
+    }
+}
+                </pre>
+            </div>
+            
+            <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full">
+                <h3 class="text-lg font-semibold text-blue-500 mb-2">Function for Random Number</h3>
+                <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
+import java.util.Random;
+            
+public class RandomNumber {
+    public static void main(String[] args) {
+        Random rand = new Random();
+        int rnum = rand.nextInt(10); // Random number between 0 and 9
+        System.out.println("Random Number: " + rnum);
+    }
+}
+                </pre>
+            </div>
+            
+            <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full">
+                <h3 class="text-lg font-semibold text-blue-500 mb-2">While Loop</h3>
+                <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
+public class WhileLoop {
+    public static void main(String[] args) {
+        int i = 0;
+        while (i < 5) {
+            System.out.println(i);
+            i++;
+        }
+    }
+}
+                </pre>
+            </div>
+            
+        </div>
+    </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-sky-50 text-blue-500 p-4 mt-10 shadow-2xl">
+    <div class="container mx-auto text-center">
+      <p>
+        <a href="https://www.java.com/" class="text-sky-600 hover:text-sky-900">
+          Official Java Documentation Website
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

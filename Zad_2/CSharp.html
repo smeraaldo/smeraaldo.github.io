@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./build.css" rel="stylesheet">
+  <title>C#</title>
+
+  <style>
+    /* Hover effect for code example cards */
+    .code-card {
+        transition: all 0.3s ease;
+    }
+
+    .code-card:hover {
+        background-color: #ecfafc; /* Lighter background color on hover */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Darker shadow on hover */
+        transform: translateY(-5px); /* Slight lift on hover */
+    }
+
+    .code-card h3 {
+        transition: color 0.3s ease;
+    }
+
+    .code-card:hover h3 {
+        color: #0288d1; /* Change text color of the heading on hover */
+    }
+  </style>
+</head>
+<body class="bg-sky-100 dark:bg-gray-800">
+  <!-- Header Section -->
+  <div class="mt-16 mx-30 p-6 bg-blue-50 shadow-lg">
+    <h1 class="text-8xl font-bold bg-sky-300 text-sky-900 p-4 text-center">
+      <strong>C#</strong>
+    </h1>
+    <p class="p-2 text-center italic bg-cyan-50 text-sky-800">
+      Sharpen your skills, sharpen your code.
+    </p>
+  </div>
+
+  <!-- Description Section -->
+  <div class="mt-10 mx-36 p-6 bg-blue-50 shadow-lg">
+    <h1 class="mb-4 text-2xl font-bold bg-linear-to-r from-sky-100 to-sky-50 text-sky-600 p-4">
+      Description
+    </h1>
+    <p class="text-gray-700 text-lg leading-relaxed mx-8">
+        C# (see SHARP) is a general-purpose high-level programming language supporting multiple paradigms. C# encompasses static typing,: 4  strong typing, lexically scoped, imperative, declarative, functional, generic,: 22  object-oriented (class-based), and component-oriented programming disciplines. The principal inventors of the C# programming language were Anders Hejlsberg, Scott Wiltamuth, and Peter Golde from Microsoft. It was first widely distributed in July 2000 and was later approved as an international standard by Ecma (ECMA-334) in 2002 and ISO/IEC (ISO/IEC 23270 and 20619) in 2003. 
+    </p>
+    <p class="text-gray-700 text-lg leading-relaxed mt-4 mx-8">
+        Microsoft introduced C# along with .NET Framework and Microsoft Visual Studio, both of which are technically speaking, closed-source. At the time, Microsoft had no open-source products. Four years later, in 2004, a free and open-source project called Microsoft Mono began, providing a cross-platform compiler and runtime environment for the C# programming language. A decade later, Microsoft released Visual Studio Code (code editor), Roslyn (compiler), and the unified .NET platform (software framework), all of which support C# and are free, open-source, and cross-platform. Mono also joined Microsoft but was not merged into .NET. As of January 2025, the most recent stable version of the language is C# 13.0.
+    </p>
+  </div>
+
+    <!-- Code Examples Section -->
+    <div class="mt-10 mb-24 mx-36 p-6 bg-blue-50 shadow-lg">
+        <h1 class="mb-4 text-2xl font-bold bg-linear-to-r from-sky-100 to-sky-50 text-sky-600 p-4">
+        Code examples
+        </h1>
+        
+        <div class="flex flex-auto gap-6 justify-center">
+        
+            <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full">
+                <h3 class="text-lg font-semibold text-blue-500 mb-2">Hello World</h3>
+                <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}
+                </pre>
+            </div>
+            
+            <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full">
+                <h3 class="text-lg font-semibold text-blue-500 mb-2">Sum of Two Numbers</h3>
+                <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = 5, b = 3;
+        Console.WriteLine("Sum: " + (a + b));
+    }
+}
+                </pre>
+            </div>
+            
+            <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full">
+                <h3 class="text-lg font-semibold text-blue-500 mb-2">Function for Random Number</h3>
+                <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Random rand = new Random();
+        int rnum = rand.Next(0, 10);
+        Console.WriteLine("Random Number: " + rnum);
+    }
+}
+                </pre>
+            </div>
+
+            <div class="code-card bg-sky-50 p-4 rounded-lg shadow-md w-full">
+                <h3 class="text-lg font-semibold text-blue-500 mb-2">While Loop</h3>
+                <pre class="bg-gray-200 p-2 rounded text-left text-sm overflow-auto">
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int i = 0;
+        while (i < 5)
+        {
+            Console.WriteLine(i);
+            i++;
+        }
+    }
+}
+                </pre>
+            </div>
+
+        </div>
+    </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-sky-50 text-blue-500 p-4 mt-10 shadow-2xl">
+    <div class="container mx-auto text-center">
+      <p>
+        <a href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/" class="text-sky-600 hover:text-sky-900">
+          Official C# Documentation Website
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

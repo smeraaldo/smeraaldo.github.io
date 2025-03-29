@@ -9,12 +9,8 @@
   <style>
     @keyframes bounceIn {
       0% {
-        transform: scale(0.95);
-        opacity: 0;
-      }
-      50% {
-        transform: scale(1.01);
-        opacity: 1;
+        transform: scale(0.99);
+        opacity: 0.9;
       }
       100% {
         transform: scale(1);
@@ -23,7 +19,7 @@
     }
 
     .bounce-in {
-        animation: bounceIn 0.6s ease-out;
+        animation: bounceIn 0.1s ease-out;
     }
 
     /* Hover effect for code example cards */
@@ -48,7 +44,7 @@
 </head>
 <body class="bg-sky-100 dark:bg-gray-800">
   <!-- Header Section -->
-  <div class="mt-16 mx-30 p-6 bg-blue-50 shadow-lg">
+  <div class="bounce-in mt-16 mx-30 p-6 bg-blue-50 shadow-lg">
     <h1 class="text-8xl font-bold bg-sky-300 text-sky-900 p-4 text-center">
       <strong>C</strong>
     </h1>
@@ -58,7 +54,7 @@
   </div>
 
   <!-- Description Section -->
-  <div class="mt-10 mx-36 p-6 bg-blue-50 shadow-lg">
+  <div class="bounce-in mt-10 mx-36 p-6 bg-blue-50 shadow-lg">
     <h1 class="mb-4 text-2xl font-bold bg-linear-to-r from-sky-100 to-sky-50 text-sky-600 p-4">
       Description
     </h1>
@@ -71,7 +67,7 @@
   </div>
 
     <!-- Code Examples Section -->
-    <div class="mt-10 mb-24 mx-36 p-6 bg-blue-50 shadow-lg">
+    <div class="bounce-in mt-10 mb-24 mx-36 p-6 bg-blue-50 shadow-lg">
         <h1 class="mb-4 text-2xl font-bold bg-linear-to-r from-sky-100 to-sky-50 text-sky-600 p-4">
         Code examples
         </h1>

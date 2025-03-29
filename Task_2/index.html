@@ -7,6 +7,21 @@
   <title>List of Programming Languages - TIOBE Index</title>
 
   <style>
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0.99);
+        opacity: 0.9;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .bounce-in {
+        animation: bounceIn 0.1s ease-out;
+    }
+
     /* Hover effect for table elements */
     .table-element {
         transition: all 0.3s ease;
@@ -28,7 +43,7 @@
   </style>
 </head>
 <body class="bg-sky-100 dark:bg-gray-800">
-  <div class="mt-16 mx-30 p-6 bg-blue-50 shadow-lg">
+  <div class="bounce-in mt-16 mx-30 p-6 bg-blue-50 shadow-lg">
     <h1 class="text-3xl font-bold bg-sky-300 text-sky-900 p-4 flex items-center">
         <span class="relative inline-flex size-3 mr-2">
           <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
@@ -41,7 +56,7 @@
     </p>
   </div>
   
-  <div class="mt-10 mb-24 mx-36 p-6 bg-blue-50 shadow-lg">
+  <div class="bounce-in mt-10 mb-24 mx-36 p-6 bg-blue-50 shadow-lg">
     <table class="w-full text-sm text-left text-sky-800 table-auto">
       <thead class="bg-sky-200">
         <tr>
